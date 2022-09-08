@@ -1,9 +1,10 @@
 import 'package:dua_in_quran/dua_page.dart';
+import 'package:dua_in_quran/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: const HomePage(),
+    home: const SplashScreen(),
     theme: ThemeData(primarySwatch: Colors.teal),
   ));
 }

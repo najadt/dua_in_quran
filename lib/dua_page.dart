@@ -14,7 +14,10 @@ class _DuaPageState extends State<DuaPage> {
     return Scaffold(
       //backgroundColor: Colors.teal[300],
       appBar: AppBar(
-        title: const Text('Duas From Quran'),
+        title: const Text(
+          'ഖുർആനിലുള്ള പ്രാർത്ഥനകൾ',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
         actions: [
           IconButton(
             onPressed: null,
@@ -49,6 +52,7 @@ class _DuaPageState extends State<DuaPage> {
                     padding: EdgeInsets.all(10),
                     margin: EdgeInsets.symmetric(vertical: 2.5, horizontal: 5),
                     child: Column(
+                      //crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
