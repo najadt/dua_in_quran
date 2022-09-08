@@ -1,5 +1,9 @@
+import 'package:dua_in_quran/consts.dart';
 import 'package:dua_in_quran/duas.dart';
+import 'package:dua_in_quran/settings.dart';
 import 'package:flutter/material.dart';
+
+import 'fn/save_settings.dart';
 
 class DuaPage extends StatefulWidget {
   const DuaPage({Key? key}) : super(key: key);
@@ -9,6 +13,25 @@ class DuaPage extends StatefulWidget {
 }
 
 class _DuaPageState extends State<DuaPage> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await getSettings();
+      setState(() {
+        setState(() {
+          arabicFontSize;
+          malayalamFontSize;
+          englishFontSize;
+          transliterationFontSize;
+          transliteration;
+          english;
+          malayalam;
+        });
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,8 +43,22 @@ class _DuaPageState extends State<DuaPage> {
         ),
         actions: [
           IconButton(
-            onPressed: null,
-            icon: Icon(Icons.settings),
+            onPressed: () async {
+              await Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingsPage()),
+              );
+              setState(() {
+                arabicFontSize;
+                malayalamFontSize;
+                englishFontSize;
+                transliterationFontSize;
+                transliteration;
+                english;
+                malayalam;
+              });
+            },
+            icon: const Icon(Icons.settings),
           )
         ],
       ),
@@ -35,7 +72,7 @@ class _DuaPageState extends State<DuaPage> {
           ),
           child: Container(
             decoration: const BoxDecoration(
-              color: Color.fromARGB(187, 77, 182, 172),
+              color: Color.fromARGB(137, 77, 182, 172),
             ),
             child: ListView(
               children: [
@@ -43,46 +80,45 @@ class _DuaPageState extends State<DuaPage> {
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color.fromARGB(211, 224, 242, 241),
+                      color: Color.fromARGB(233, 224, 242, 241),
                       border: Border.all(
                         width: 1,
-                        color: Color.fromARGB(255, 50, 176, 39),
+                        color: const Color.fromARGB(255, 50, 176, 39),
                       ),
                     ),
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.symmetric(vertical: 2.5, horizontal: 5),
+                    padding: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.symmetric(
+                        vertical: 2.5, horizontal: 5),
                     child: Column(
-                      //crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Container(
-                              child: Row(
-                                children: [
-                                  Stack(
-                                      alignment: AlignmentDirectional.center,
-                                      children: [
-                                        Text(
-                                          '${i + 1}',
-                                          style: TextStyle(
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                        Image.asset(
-                                          'assets/number_bg.png',
-                                          // scale: 0.2,
-                                          height: 30,
-                                        ),
-                                      ]),
-                                  Text(
-                                    ' ${duas[i]['sura_name_arabic'] + ' - ' + duas[i]['verse']}',
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ],
-                              ),
+                            Row(
+                              children: [
+                                Stack(
+                                    alignment: AlignmentDirectional.center,
+                                    children: [
+                                      Text(
+                                        '${i + 1}',
+                                        style: const TextStyle(
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Image.asset(
+                                        'assets/number_bg.png',
+                                        // scale: 0.2,
+                                        height: 30,
+                                      ),
+                                    ]),
+                                Text(
+                                  ' ${duas[i]['sura_name_arabic'] + ' - ' + duas[i]['verse']}',
+                                  style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
@@ -104,28 +140,42 @@ class _DuaPageState extends State<DuaPage> {
                           duas[i]['arabic'],
                           textDirection: TextDirection.rtl,
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: arabicFontSize,
                               fontWeight: FontWeight.bold,
-                              color: Color.fromARGB(255, 184, 153, 14)),
+                              color: const Color.fromARGB(255, 184, 153, 14)),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
-                        Text(duas[i]['malayalam']),
-                        SizedBox(
-                          height: 10,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (malayalam)
+                              Text(duas[i]['malayalam'],
+                                  style:
+                                      TextStyle(fontSize: malayalamFontSize)),
+                            if (malayalam)
+                              const SizedBox(
+                                height: 10,
+                              ),
+                            if (english)
+                              Text(
+                                duas[i]['english'],
+                                style: TextStyle(fontSize: englishFontSize),
+                              ),
+                            if (english)
+                              const SizedBox(
+                                height: 10,
+                              ),
+                            if (transliteration)
+                              Text(duas[i]['transliteration'],
+                                  style: TextStyle(
+                                      fontSize: transliterationFontSize)),
+                          ],
                         ),
-                        Text(
-                          duas[i]['english'],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(duas[i]['transliteration'],
-                            style: TextStyle(fontSize: 12)),
                       ],
                     ),
-                  )
+                  ),
               ],
             ),
           ),
