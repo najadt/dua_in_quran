@@ -11,7 +11,7 @@ List duas = [
     "english":
         "Our Lord, accept [this] from us. You are the All Hearing, the All Knowing.",
     "transliteration": "rabbana taqabbal minna innaka anta al-sami'u al-'alimu",
-    "audiolink": ""
+    "audiolink": "albakara_127"
   },
   {
     "id": "2",
@@ -26,7 +26,7 @@ List duas = [
         "Our Lord, and make us Muslims [in submission] to You and from our descendants a Muslim nation [in submission] to You. And show us our rites and accept our repentance. Indeed, You are the Accepting of repentance, the Merciful.",
     "transliteration":
         "rabbana wa-ij'alna mus'limayni laka wamin dhurriyyatina ummatan mus'limatan laka wa-arina manasikana watub alayna innaka anta al-tawabu al-rahimu",
-    "audiolink": ""
+    "audiolink": "albakara_128"
   },
   {
     "id": "3",
@@ -41,7 +41,7 @@ List duas = [
         "Our Lord, give us good in this world and in the Hereafter, and protect us from the torment of the Fire.",
     "transliteration":
         "rabbana atina fi al-dun'ya hasanatan wafi al-akhirati hasanatan waqina adhaba al-nari",
-    "audiolink": ""
+    "audiolink": "albakara_201"
   },
   {
     "id": "4",
@@ -56,7 +56,7 @@ List duas = [
         "Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving people.",
     "transliteration":
         "rabbana afrigh alayna sabran wathabbit aqdamana wa-unsur'na ala al-qawmi al-kafirina",
-    "audiolink": ""
+    "audiolink": "albakara_250"
   },
   {
     "id": "5",
@@ -71,7 +71,7 @@ List duas = [
         "Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.",
     "transliteration":
         "rabbana la tuakhidh'na in nasina aw akhtana rabbana wala tahmil alayna is'ran kama hamaltahu ala alladhina min qablina rabbana wala tuhammil'na ma la taqata lana bihi wa-u'fu anna wa-igh'fir lana wa-ir'hamna anta mawlana fa-unsur'na ala al-qawmi al-kafirina",
-    "audiolink": ""
+    "audiolink": "albakara_286"
   },
   {
     "id": "6",
@@ -86,23 +86,23 @@ List duas = [
         "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
     "transliteration":
         "rabbana la tuzigh qulubana ba'da idh hadaytana wahab lana min ladunka rahmatan innaka anta al-wahabu",
-    "audiolink": ""
+    "audiolink": "aluimbran_8"
   },
-  {
-    "id": "7",
-    "sura": "3",
-    "sura_name_arabic": "ആലുഇംറാന്‍",
-    "verse": "9",
-    "arabic":
-        "رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ",
-    "malayalam":
-        "ഞങ്ങളുടെ നാഥാ, തീര്‍ച്ചയായും നീ ജനങ്ങളെയെല്ലാം ഒരു ദിവസം ഒരുമിച്ചുകൂട്ടുന്നതാകുന്നു. അതില്‍ യാതൊരു സംശയവുമില്ല. തീര്‍ച്ചയായും അല്ലാഹു വാഗ്ദാനം ലംഘിക്കുന്നതല്ല.",
-    "english":
-        "Our Lord, surely You will gather the people for a Day about which there is no doubt. Indeed, Allah does not fail in His promise.",
-    "transliteration":
-        "rabbana innaka jami'u al-nasi liyawmin la rayba fihi inna al-laha la yukh'lifu al-mi'ada",
-    "audiolink": ""
-  },
+  // {
+  //   "id": "7",
+  //   "sura": "3",
+  //   "sura_name_arabic": "ആലുഇംറാന്‍",
+  //   "verse": "9",
+  //   "arabic":
+  //       "رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ",
+  //   "malayalam":
+  //       "ഞങ്ങളുടെ നാഥാ, തീര്‍ച്ചയായും നീ ജനങ്ങളെയെല്ലാം ഒരു ദിവസം ഒരുമിച്ചുകൂട്ടുന്നതാകുന്നു. അതില്‍ യാതൊരു സംശയവുമില്ല. തീര്‍ച്ചയായും അല്ലാഹു വാഗ്ദാനം ലംഘിക്കുന്നതല്ല.",
+  //   "english":
+  //       "Our Lord, surely You will gather the people for a Day about which there is no doubt. Indeed, Allah does not fail in His promise.",
+  //   "transliteration":
+  //       "rabbana innaka jami'u al-nasi liyawmin la rayba fihi inna al-laha la yukh'lifu al-mi'ada",
+  //   "audiolink": ""
+  // },
   {
     "id": "8",
     "sura": "3",
@@ -116,7 +116,7 @@ List duas = [
         "Our Lord, indeed we have believed, so forgive us our sins and protect us from the punishment of the Fire.",
     "transliteration":
         "rabbana innana amanna fa-igh'fir lana dhunubana waqina adhaba al-nari",
-    "audiolink": ""
+    "audiolink": "aluimbran_16"
   },
   {
     "id": "9",
@@ -131,7 +131,7 @@ List duas = [
         "Lord, we believe in what You have revealed and we follow the messenger: record us among those who bear witness [to the Truth].’",
     "transliteration":
         "rabbana amanna bima anzalta wa-ittaba'na al-rasula fa-uk'tub'na ma'a al-shahidina",
-    "audiolink": ""
+    "audiolink": "aluimbran_53"
   },
   {
     "id": "10",
@@ -146,53 +146,53 @@ List duas = [
         "Our Lord, forgive us our sins and the excess [committed] in our affairs and plant firmly our feet and give us victory over the disbelieving people.",
     "transliteration":
         "rabbana igh'fir lana dhunubana wa-is'rafana fi amrina wathabbit aqdamana wa-unsur'na ala al-qawmi al-kafirina",
-    "audiolink": ""
+    "audiolink": "aluimbran_147"
   },
-  {
-    "id": "11",
-    "sura": "3",
-    "sura_name_arabic": "ആലുഇംറാന്‍",
-    "verse": "191",
-    "arabic":
-        "رَبَّنَا مَا خَلَقْتَ هَـٰذَا بَـٰطِلًا سُبْحَـٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
-    "malayalam":
-        "ഞങ്ങളുടെ രക്ഷിതാവേ! നീ നിരര്‍ത്ഥകമായി സൃഷ്ടിച്ചതല്ല ഇത്‌. നീ എത്രയോ പരിശുദ്ധന്‍! അതിനാല്‍ നരകശിക്ഷയില്‍ നിന്ന് ഞങ്ങളെ കാത്തുരക്ഷിക്കണേ.",
-    "english":
-        "Our Lord, You did not create this aimlessly; exalted are You [above such a thing]; then protect us from the punishment of the Fire.",
-    "transliteration":
-        "rabbana ma khalaqta hadha batilan sub'hanaka faqina adhaba al-nari",
-    "audiolink": ""
-  },
-  {
-    "id": "12",
-    "sura": "3",
-    "sura_name_arabic": "ആലുഇംറാന്‍",
-    "verse": "192",
-    "arabic":
-        "رَبَّنَآ إِنَّكَ مَن تُدْخِلِ ٱلنَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ وَمَا لِلظَّـٰلِمِينَ مِنْ أَنصَارٍ",
-    "malayalam":
-        "ഞങ്ങളുടെ രക്ഷിതാവേ, നീ വല്ലവനെയും നരകത്തില്‍ പ്രവേശിപ്പിച്ചാല്‍ അവനെ നിന്ദ്യനാക്കിക്കഴിഞ്ഞു. അക്രമികള്‍ക്ക് സഹായികളായി ആരുമില്ല താനും",
-    "english":
-        "Our Lord, indeed whoever You admit to the Fire - You have disgraced him, and for the wrongdoers there are no helpers.",
-    "transliteration":
-        "rabbana innaka man tud'khili al-nara faqad akhzaytahu wama lilzzalimina min ansarin",
-    "audiolink": ""
-  },
-  {
-    "id": "13",
-    "sura": "3",
-    "sura_name_arabic": "ആലുഇംറാന്‍",
-    "verse": "193",
-    "arabic":
-        "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَـٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا ۚ رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
-    "malayalam":
-        "ഞങ്ങളുടെ രക്ഷിതാവേ, സത്യവിശ്വാസത്തിലേക്ക് ക്ഷണിക്കുന്ന ഒരു പ്രബോധകന്‍ നിങ്ങള്‍ നിങ്ങളുടെ രക്ഷിതാവില്‍ വിശ്വസിക്കുവിന്‍ എന്നു പറയുന്നത് ഞങ്ങള്‍ കേട്ടു. അങ്ങനെ ഞങ്ങള്‍ വിശ്വസിച്ചിരിക്കുന്നു. ഞങ്ങളുടെ രക്ഷിതാവേ, അതിനാല്‍ ഞങ്ങളുടെ പാപങ്ങള്‍ ഞങ്ങള്‍ക്ക് നീ പൊറുത്തുതരികയും ഞങ്ങളുടെ തിന്‍മകള്‍ ഞങ്ങളില്‍ നിന്ന് നീ മായ്ച്ചുകളയുകയും ചെയ്യേണമേ. പുണ്യവാന്‍മാരുടെ കൂട്ടത്തിലായി ഞങ്ങളെ നീ മരിപ്പിക്കുകയും ചെയ്യേണമേ.",
-    "english":
-        "Our Lord, indeed we have heard a caller calling to faith, [saying], 'Believe in your Lord,' and we have believed. Our Lord, so forgive us our sins and remove from us our misdeeds and cause us to die with the righteous.",
-    "transliteration":
-        "rabbana innana sami'na munadiyan yunadi lil'imani an aminu birabbikum faamanna rabbana fa-igh'fir lana dhunubana wakaffir anna sayyiatina watawaffana ma'a al-abrari",
-    "audiolink": ""
-  },
+  // {
+  //   "id": "11",
+  //   "sura": "3",
+  //   "sura_name_arabic": "ആലുഇംറാന്‍",
+  //   "verse": "191",
+  //   "arabic":
+  //       "رَبَّنَا مَا خَلَقْتَ هَـٰذَا بَـٰطِلًا سُبْحَـٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
+  //   "malayalam":
+  //       "ഞങ്ങളുടെ രക്ഷിതാവേ! നീ നിരര്‍ത്ഥകമായി സൃഷ്ടിച്ചതല്ല ഇത്‌. നീ എത്രയോ പരിശുദ്ധന്‍! അതിനാല്‍ നരകശിക്ഷയില്‍ നിന്ന് ഞങ്ങളെ കാത്തുരക്ഷിക്കണേ.",
+  //   "english":
+  //       "Our Lord, You did not create this aimlessly; exalted are You [above such a thing]; then protect us from the punishment of the Fire.",
+  //   "transliteration":
+  //       "rabbana ma khalaqta hadha batilan sub'hanaka faqina adhaba al-nari",
+  //   "audiolink": ""
+  // },
+  // {
+  //   "id": "12",
+  //   "sura": "3",
+  //   "sura_name_arabic": "ആലുഇംറാന്‍",
+  //   "verse": "192",
+  //   "arabic":
+  //       "رَبَّنَآ إِنَّكَ مَن تُدْخِلِ ٱلنَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ وَمَا لِلظَّـٰلِمِينَ مِنْ أَنصَارٍ",
+  //   "malayalam":
+  //       "ഞങ്ങളുടെ രക്ഷിതാവേ, നീ വല്ലവനെയും നരകത്തില്‍ പ്രവേശിപ്പിച്ചാല്‍ അവനെ നിന്ദ്യനാക്കിക്കഴിഞ്ഞു. അക്രമികള്‍ക്ക് സഹായികളായി ആരുമില്ല താനും",
+  //   "english":
+  //       "Our Lord, indeed whoever You admit to the Fire - You have disgraced him, and for the wrongdoers there are no helpers.",
+  //   "transliteration":
+  //       "rabbana innaka man tud'khili al-nara faqad akhzaytahu wama lilzzalimina min ansarin",
+  //   "audiolink": ""
+  // },
+  // {
+  //   "id": "13",
+  //   "sura": "3",
+  //   "sura_name_arabic": "ആലുഇംറാന്‍",
+  //   "verse": "193",
+  //   "arabic":
+  //       "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَـٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا ۚ رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
+  //   "malayalam":
+  //       "ഞങ്ങളുടെ രക്ഷിതാവേ, സത്യവിശ്വാസത്തിലേക്ക് ക്ഷണിക്കുന്ന ഒരു പ്രബോധകന്‍ നിങ്ങള്‍ നിങ്ങളുടെ രക്ഷിതാവില്‍ വിശ്വസിക്കുവിന്‍ എന്നു പറയുന്നത് ഞങ്ങള്‍ കേട്ടു. അങ്ങനെ ഞങ്ങള്‍ വിശ്വസിച്ചിരിക്കുന്നു. ഞങ്ങളുടെ രക്ഷിതാവേ, അതിനാല്‍ ഞങ്ങളുടെ പാപങ്ങള്‍ ഞങ്ങള്‍ക്ക് നീ പൊറുത്തുതരികയും ഞങ്ങളുടെ തിന്‍മകള്‍ ഞങ്ങളില്‍ നിന്ന് നീ മായ്ച്ചുകളയുകയും ചെയ്യേണമേ. പുണ്യവാന്‍മാരുടെ കൂട്ടത്തിലായി ഞങ്ങളെ നീ മരിപ്പിക്കുകയും ചെയ്യേണമേ.",
+  //   "english":
+  //       "Our Lord, indeed we have heard a caller calling to faith, [saying], 'Believe in your Lord,' and we have believed. Our Lord, so forgive us our sins and remove from us our misdeeds and cause us to die with the righteous.",
+  //   "transliteration":
+  //       "rabbana innana sami'na munadiyan yunadi lil'imani an aminu birabbikum faamanna rabbana fa-igh'fir lana dhunubana wakaffir anna sayyiatina watawaffana ma'a al-abrari",
+  //   "audiolink": ""
+  // },
   {
     "id": "14",
     "sura": "3",
@@ -206,7 +206,7 @@ List duas = [
         "Our Lord, and grant us what You promised us through Your messengers and do not disgrace us on the Day of Resurrection. Indeed, You do not fail in [Your] promise.",
     "transliteration":
         "rabbana waatina ma wa'adttana ala rusulika wala tukh'zina yawma al-qiyamati innaka la tukh'lifu al-mi'ada",
-    "audiolink": ""
+    "audiolink": "aluimbran_194"
   },
   {
     "id": "14",
@@ -218,7 +218,7 @@ List duas = [
         "ഞങ്ങളുടെ രക്ഷിതാവേ! ഞങ്ങള്‍ വിശ്വസിച്ചിരിക്കുന്നു. അതിനാല്‍ സത്യസാക്ഷികളോടൊപ്പം ഞങ്ങളെയും നീ രേഖപ്പെടുത്തേണമേ",
     "english": "Our Lord, we believe, so count us amongst the witnesses.",
     "transliteration": "rabbana amanna fa-uk'tub'na ma'a al-shahidina",
-    "audiolink": ""
+    "audiolink": "maaida_83"
   },
   {
     "id": "16",
@@ -233,7 +233,7 @@ List duas = [
         "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",
     "transliteration":
         "rabbana zalamna anfusana wa-in lam taghfir lana watarhamna lanakunanna mina al-khasirina",
-    "audiolink": ""
+    "audiolink": "alaraf_23"
   },
   {
     "id": "17",
@@ -245,7 +245,7 @@ List duas = [
         "ഞങ്ങളുടെ രക്ഷിതാവേ, ഞങ്ങളെ നീ അക്രമികളായ ജനങ്ങളുടെ കൂട്ടത്തിലാക്കരുതേ",
     "english": "Our Lord, do not place us with the wrongdoing people.",
     "transliteration": "rabbana la taj'alna ma'a al-qawmi al-zalimina",
-    "audiolink": ""
+    "audiolink": "alaraf_47"
   },
   {
     "id": "18",
@@ -258,7 +258,7 @@ List duas = [
     "english":
         "Our Lord, pour upon us patience and let us die as Muslims [in submission to You].",
     "transliteration": "rabbana afrigh alayna sabran watawaffana mus'limina",
-    "audiolink": ""
+    "audiolink": "alaraf_126"
   },
   {
     "id": "19",
@@ -271,7 +271,7 @@ List duas = [
     "english":
         "Our Lord, make us not [objects of] trial for the wrongdoing people",
     "transliteration": "rabbana la taj'alna fit'natan lil'qawmi al-zalimina",
-    "audiolink": ""
+    "audiolink": "yunus_85"
   },
   {
     "id": "20",
@@ -286,7 +286,7 @@ List duas = [
         "My Lord, make me an establisher of prayer, and [many] from my descendants. Our Lord, and accept my supplication.",
     "transliteration":
         "rabbi ij'alni muqima al-salati wamin dhurriyyati rabbana wataqabbal du'ai",
-    "audiolink": ""
+    "audiolink": "ibrahim_40"
   },
   {
     "id": "21",
@@ -301,7 +301,7 @@ List duas = [
         "Our Lord, forgive me and my parents and the believers the Day the account is established.",
     "transliteration":
         "rabbana igh'fir li waliwalidayya walil'mu'minina yawma yaqumu al-hisabu",
-    "audiolink": ""
+    "audiolink": "ibrahim_41"
   },
   {
     "id": "22",
@@ -311,11 +311,11 @@ List duas = [
     "arabic":
         "رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
     "malayalam":
-        " ഞങ്ങളുടെ രക്ഷിതാവേ, നിന്‍റെ പക്കല്‍ നിന്നുള്ള കാരുണ്യം ഞങ്ങള്‍ക്ക് നീ നല്‍കുകയും ഞങ്ങളുടെ കാര്യം നേരാംവണ്ണം നിര്‍വഹിക്കുവാന്‍ നീ സൌകര്യം നല്‍കുകയും ചെയ്യേണമേ. ",
+        " ഞങ്ങളുടെ രക്ഷിതാവേ, നിന്‍റെ പക്കല്‍ നിന്നുള്ള കാരുണ്യം ഞങ്ങള്‍ക്ക് നീ നല്‍കുകയും ഞങ്ങളുടെ കാര്യം നേരാംവണ്ണം നിര്‍വഹിക്കുവാന്‍ നീ സൗകര്യം നല്‍കുകയും ചെയ്യേണമേ. ",
     "english":
         "Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
     "transliteration": "rabbana innana nakhafu an yafruta alayna aw an yatgha",
-    "audiolink": ""
+    "audiolink": "alkahf_10"
   },
   {
     "id": "23",
@@ -330,7 +330,7 @@ List duas = [
         "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
     "transliteration":
         "la ilaha illa anta sub'hanaka inni kuntu mina al-zalimina",
-    "audiolink": ""
+    "audiolink": "alambia_87"
   },
   {
     "id": "24",
@@ -345,7 +345,7 @@ List duas = [
         "Our Lord, we have believed, so forgive us and have mercy upon us, and You are the best of the merciful.",
     "transliteration":
         "rabbana amanna fa-igh'fir lana wa-ir'hamna wa-anta khayru al-rahimina",
-    "audiolink": ""
+    "audiolink": "muhminoon_109"
   },
   {
     "id": "25",
@@ -358,7 +358,7 @@ List duas = [
     "english":
         "My Lord, forgive and have mercy, and You are the best of the merciful.",
     "transliteration": "rabbi igh'fir wa-ir'ham wa-anta khayru al-rahimina",
-    "audiolink": ""
+    "audiolink": "muhminoon_118"
   },
   {
     "id": "26",
@@ -373,7 +373,7 @@ List duas = [
         "Our Lord, turn away from us the suffering of Hell, for it is a dreadful torment to suffer!",
     "transliteration":
         "rabbana is'rif anna adhaba jahannama inna adhabaha kana gharaman",
-    "audiolink": ""
+    "audiolink": "alfurkaan_65"
   },
   {
     "id": "27",
@@ -388,12 +388,12 @@ List duas = [
         "Our Lord, grant us from among our wives and offspring comfort to our eyes and make us an example for the righteous.",
     "transliteration":
         "rabbana hab lana min azwajina wadhurriyyatina qurrata a'yunin wa-ij'alna lil'muttaqina imaman",
-    "audiolink": ""
+    "audiolink": "alfurkan_74"
   },
   {
     "id": "28",
     "sura": "28",
-    "sura_name_arabic": "അൻ-നംല്",
+    "sura_name_arabic": "അല്‍-ഖസ്വസ്",
     "verse": "24",
     "arabic": "رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ",
     "malayalam":
@@ -401,7 +401,7 @@ List duas = [
     "english":
         "My Lord, I am in dire need of whatever good thing You may send me",
     "transliteration": "rabbi inni lima anzalta ilayya min khayrin faqirun",
-    "audiolink": ""
+    "audiolink": "kasas_24"
   },
   {
     "id": "29",
@@ -416,7 +416,7 @@ List duas = [
         "Our Lord, You have encompassed all things in mercy and knowledge, so forgive those who have repented and followed Your way and protect them from the punishment of Hellfire.",
     "transliteration":
         "rabbana wasi'ta kulla shayin rahmatan wa'il'man fa-igh'fir lilladhina tabu wa-ittaba'u sabilaka waqihim adhaba al-jahimi",
-    "audiolink": ""
+    "audiolink": "ghafir_7"
   },
   {
     "id": "30",
@@ -431,7 +431,7 @@ List duas = [
         "Lord, forgive us our sins and the sins of our brothers who believed before us, and leave no malice in our hearts towards those who believe. Lord, You are truly compassionate and merciful.",
     "transliteration":
         "rabbana igh'fir lana wali-ikh'wanina alladhina sabaquna bil-imani wala taj'al fi qulubina ghillan lilladhina amanu rabbana innaka raufun rahimun",
-    "audiolink": ""
+    "audiolink": "alhashr_10"
   },
   {
     "id": "31",
@@ -446,7 +446,7 @@ List duas = [
         "Our Lord, make us not [objects of] torment for the disbelievers and forgive us, our Lord. Indeed, it is You who is the Exalted in Might, the Wise.",
     "transliteration":
         "rabbana la taj'alna fit'natan lilladhina kafaru wa-igh'fir lana rabbana innaka anta al-'azizu al-hakimu",
-    "audiolink": ""
+    "audiolink": "mumthahna_5"
   },
   {
     "id": "32",
@@ -461,6 +461,6 @@ List duas = [
         "Our Lord, perfect for us our light and forgive us. Indeed, You are over all things competent.",
     "transliteration":
         "rabbana atmim lana nurana wa-igh'fir lana innaka ala kulli shayin qadirun",
-    "audiolink": ""
+    "audiolink": "thahrim_8"
   }
 ];

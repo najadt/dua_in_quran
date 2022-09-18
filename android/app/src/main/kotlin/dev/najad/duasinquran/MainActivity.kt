@@ -1,4 +1,4 @@
-package com.example.dua_in_quran
+package dev.najad.duasinquran
 
 import io.flutter.embedding.android.FlutterActivity
 

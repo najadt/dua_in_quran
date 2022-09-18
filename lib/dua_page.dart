@@ -2,7 +2,8 @@ import 'package:dua_in_quran/consts.dart';
 import 'package:dua_in_quran/duas.dart';
 import 'package:dua_in_quran/settings.dart';
 import 'package:flutter/material.dart';
-
+import 'package:just_audio/just_audio.dart';
+import 'package:share_plus/share_plus.dart';
 import 'fn/save_settings.dart';
 
 class DuaPage extends StatefulWidget {
@@ -13,21 +14,22 @@ class DuaPage extends StatefulWidget {
 }
 
 class _DuaPageState extends State<DuaPage> {
+  final player = AudioPlayer();
+
+  bool state = false;
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await getSettings();
       setState(() {
-        setState(() {
-          arabicFontSize;
-          malayalamFontSize;
-          englishFontSize;
-          transliterationFontSize;
-          transliteration;
-          english;
-          malayalam;
-        });
+        arabicFontSize;
+        malayalamFontSize;
+        englishFontSize;
+        transliterationFontSize;
+        transliteration;
+        english;
+        malayalam;
       });
     });
   }
@@ -80,7 +82,7 @@ class _DuaPageState extends State<DuaPage> {
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color.fromARGB(233, 224, 242, 241),
+                      color: const Color.fromARGB(233, 224, 242, 241),
                       border: Border.all(
                         width: 1,
                         color: const Color.fromARGB(255, 50, 176, 39),
@@ -122,12 +124,17 @@ class _DuaPageState extends State<DuaPage> {
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
-                              children: const [
+                              children: [
                                 IconButton(
-                                    onPressed: null,
-                                    icon: Icon(Icons.play_arrow_rounded)),
+                                    onPressed: () {
+                                      state ? stop() : play(i);
+                                    },
+                                    icon: state
+                                        ? const Icon(Icons.stop_rounded)
+                                        : const Icon(Icons.play_arrow_rounded)),
                                 IconButton(
-                                    onPressed: null, icon: Icon(Icons.share))
+                                    onPressed: () => myShare(duas[i]),
+                                    icon: const Icon(Icons.share))
                               ],
                             ),
                           ],
@@ -182,5 +189,34 @@ class _DuaPageState extends State<DuaPage> {
         ),
       ),
     );
+  }
+
+  play(i) async {
+    setState(() {
+      state = true;
+    });
+    await player.setAsset('assets/audios/${duas[i]['audiolink']}.mp3');
+    await player.play();
+
+    //await player.stop();
+  }
+
+  stop() async {
+    setState(() {
+      state = false;
+    });
+    await player.stop();
+  }
+
+  myShare(dua) {
+    //String appLink = '''https:\\najad.dev\duaApp''';
+    String shareText = dua['arabic'] +
+        '\n\n' +
+        (malayalam ? dua['malayalam'] + '\n\n' : '') +
+        (english ? dua['english'] + '\n\n' : '') +
+        (transliteration ? dua['transliteration'] + '\n\n' : '') +
+        ('${dua['sura_name_arabic']}:${dua['verse']}');
+
+    Share.share(shareText);
   }
 }
