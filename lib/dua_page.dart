@@ -82,7 +82,7 @@ class _DuaPageState extends State<DuaPage> {
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: const Color.fromARGB(233, 224, 242, 241),
+                      color: const Color.fromARGB(233, 234, 244, 243),
                       border: Border.all(
                         width: 1,
                         color: const Color.fromARGB(255, 50, 176, 39),
@@ -127,11 +127,9 @@ class _DuaPageState extends State<DuaPage> {
                               children: [
                                 IconButton(
                                     onPressed: () {
-                                      state ? stop() : play(i);
+                                      play(i);
                                     },
-                                    icon: state
-                                        ? const Icon(Icons.stop_rounded)
-                                        : const Icon(Icons.play_arrow_rounded)),
+                                    icon: const Icon(Icons.play_arrow_rounded)),
                                 IconButton(
                                     onPressed: () => myShare(duas[i]),
                                     icon: const Icon(Icons.share))

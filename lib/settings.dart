@@ -1,5 +1,4 @@
 import 'package:dua_in_quran/consts.dart';
-import 'package:dua_in_quran/dua_page.dart';
 import "package:flutter/material.dart";
 
 import 'fn/save_settings.dart';
@@ -177,7 +176,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     ElevatedButton.icon(
-                        icon: Icon(Icons.restore),
+                        icon: const Icon(Icons.restore),
                         onPressed: () {
                           setState(() {
                             arabicFontSize = 25;

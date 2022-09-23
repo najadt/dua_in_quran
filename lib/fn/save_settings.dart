@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../consts.dart';
@@ -17,13 +18,15 @@ Future saveSettings() async {
 Future getSettings() async {
   try {
     final prefs = await SharedPreferences.getInstance();
-    arabicFontSize = await prefs.getInt('arabicFontSize')!.toDouble();
-    malayalamFontSize = await prefs.getInt('malayalamFontSize')!.toDouble();
-    englishFontSize = await prefs.getInt('englishFontSize')!.toDouble();
+    arabicFontSize = prefs.getInt('arabicFontSize')!.toDouble();
+    malayalamFontSize = prefs.getInt('malayalamFontSize')!.toDouble();
+    englishFontSize = prefs.getInt('englishFontSize')!.toDouble();
     transliterationFontSize =
-        await prefs.getInt('transliterationFontSize')!.toDouble();
-    english = (await prefs.getBool('english'))!;
-    malayalam = (await prefs.getBool('malayalam'))!;
-    transliteration = (await prefs.getBool('transliteration'))!;
-  } catch (e) {}
+        prefs.getInt('transliterationFontSize')!.toDouble();
+    english = (prefs.getBool('english'))!;
+    malayalam = (prefs.getBool('malayalam'))!;
+    transliteration = (prefs.getBool('transliteration'))!;
+  } catch (e) {
+    debugPrint('$e');
+  }
 }

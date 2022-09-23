@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if (_start < 1) {
         _start = 4;
         Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (BuildContext context) => DuaPage()));
+            MaterialPageRoute(builder: (BuildContext context) => const DuaPage()));
       } else {
         _start = _start - 1;
       }
@@ -77,8 +77,8 @@ class _SplashScreenState extends State<SplashScreen> {
               textAlign: TextAlign.center,
             ),
             Expanded(
-              child: SizedBox(),
               flex: 1,
+              child: SizedBox(),
             ),
             LinearProgressIndicator(
               color: Colors.amber,
