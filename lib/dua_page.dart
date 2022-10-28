@@ -64,125 +64,123 @@ class _DuaPageState extends State<DuaPage> {
           )
         ],
       ),
-      body: SafeArea(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/dua_app_bg.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Container(
           decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/dua_app_bg.png"),
-              fit: BoxFit.cover,
-            ),
+            color: Color.fromARGB(137, 77, 182, 172),
           ),
-          child: Container(
-            decoration: const BoxDecoration(
-              color: Color.fromARGB(137, 77, 182, 172),
-            ),
-            child: ListView(
-              children: [
-                for (int i = 0; i < duas.length; i++)
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: const Color.fromARGB(233, 234, 244, 243),
-                      border: Border.all(
-                        width: 1,
-                        color: const Color.fromARGB(255, 50, 176, 39),
-                      ),
-                    ),
-                    padding: const EdgeInsets.all(10),
-                    margin: const EdgeInsets.symmetric(
-                        vertical: 2.5, horizontal: 5),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Stack(
-                                    alignment: AlignmentDirectional.center,
-                                    children: [
-                                      Text(
-                                        '${i + 1}',
-                                        style: const TextStyle(
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      Image.asset(
-                                        'assets/number_bg.png',
-                                        // scale: 0.2,
-                                        height: 30,
-                                      ),
-                                    ]),
-                                Text(
-                                  ' ${duas[i]['sura_name_arabic'] + ' - ' + duas[i]['verse']}',
-                                  style: const TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                IconButton(
-                                    onPressed: () {
-                                      play(i);
-                                    },
-                                    icon: const Icon(Icons.play_arrow_rounded)),
-                                IconButton(
-                                    onPressed: () => myShare(duas[i]),
-                                    icon: const Icon(Icons.share))
-                              ],
-                            ),
-                          ],
-                        ),
-                        const Divider(
-                          color: Colors.teal,
-                          thickness: 1,
-                        ),
-                        Text(
-                          duas[i]['arabic'],
-                          textDirection: TextDirection.rtl,
-                          style: TextStyle(
-                              fontSize: arabicFontSize,
-                              fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 184, 153, 14)),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            if (malayalam)
-                              Text(duas[i]['malayalam'],
-                                  style:
-                                      TextStyle(fontSize: malayalamFontSize)),
-                            if (malayalam)
-                              const SizedBox(
-                                height: 10,
-                              ),
-                            if (english)
-                              Text(
-                                duas[i]['english'],
-                                style: TextStyle(fontSize: englishFontSize),
-                              ),
-                            if (english)
-                              const SizedBox(
-                                height: 10,
-                              ),
-                            if (transliteration)
-                              Text(duas[i]['transliteration'],
-                                  style: TextStyle(
-                                      fontSize: transliterationFontSize)),
-                          ],
-                        ),
-                      ],
+          child: ListView(
+            children: [
+              for (int i = 0; i < duas.length; i++)
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color.fromARGB(233, 234, 244, 243),
+                    border: Border.all(
+                      width: 1,
+                      color: const Color.fromARGB(255, 50, 176, 39),
                     ),
                   ),
-              ],
-            ),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 2.5, horizontal: 5),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Stack(
+                                  alignment: AlignmentDirectional.center,
+                                  children: [
+                                    Text(
+                                      '${i + 1}',
+                                      style: const TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Image.asset(
+                                      'assets/number_bg.png',
+                                      // scale: 0.2,
+                                      height: 30,
+                                    ),
+                                  ]),
+                              Text(
+                                ' ${duas[i]['sura_name_arabic'] + ' - ' + duas[i]['verse']}',
+                                style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              IconButton(
+                                  onPressed: () {
+                                    play(i);
+                                  },
+                                  icon: const Icon(Icons.play_arrow_rounded)),
+                              IconButton(
+                                  onPressed: () => myShare(duas[i]),
+                                  icon: const Icon(Icons.share))
+                            ],
+                          ),
+                        ],
+                      ),
+                      const Divider(
+                        color: Colors.teal,
+                        thickness: 1,
+                      ),
+                      Text(
+                        duas[i]['arabic'],
+                        textDirection: TextDirection.rtl,
+                        style: TextStyle(
+                            fontSize: arabicFontSize,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 184, 153, 14)),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (malayalam)
+                            Text(duas[i]['malayalam'],
+                                style:
+                                    TextStyle(fontSize: malayalamFontSize)),
+                          if (malayalam)
+                            const SizedBox(
+                              height: 10,
+                            ),
+                          if (english)
+                            Text(
+                              duas[i]['english'],
+                              style: TextStyle(fontSize: englishFontSize),
+                            ),
+                          if (english)
+                            const SizedBox(
+                              height: 10,
+                            ),
+                          if (transliteration)
+                            Text(duas[i]['transliteration'],
+                                style: TextStyle(
+                                    fontSize: transliterationFontSize)),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+            ],
           ),
         ),
       ),
