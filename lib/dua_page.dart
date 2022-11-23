@@ -4,6 +4,7 @@ import 'package:dua_in_quran/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:share_plus/share_plus.dart';
+import 'drawer.dart';
 import 'fn/save_settings.dart';
 
 class DuaPage extends StatefulWidget {
@@ -37,32 +38,33 @@ class _DuaPageState extends State<DuaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: const MyDrawer(),
       //backgroundColor: Colors.teal[300],
       appBar: AppBar(
         title: const Text(
           'ഖുർആനിലുള്ള പ്രാർത്ഥനകൾ',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
-        actions: [
-          IconButton(
-            onPressed: () async {
-              await Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const SettingsPage()),
-              );
-              setState(() {
-                arabicFontSize;
-                malayalamFontSize;
-                englishFontSize;
-                transliterationFontSize;
-                transliteration;
-                english;
-                malayalam;
-              });
-            },
-            icon: const Icon(Icons.settings),
-          )
-        ],
+        // actions: [
+        //   IconButton(
+        //     onPressed: () async {
+        //       await Navigator.push(
+        //         context,
+        //         MaterialPageRoute(builder: (context) => const SettingsPage()),
+        //       );
+              // setState(() {
+              //   arabicFontSize;
+              //   malayalamFontSize;
+              //   englishFontSize;
+              //   transliterationFontSize;
+              //   transliteration;
+              //   english;
+              //   malayalam;
+              // });
+        //    },
+        //     icon: const Icon(Icons.settings),
+        //   )
+        // ],
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -88,8 +90,8 @@ class _DuaPageState extends State<DuaPage> {
                     ),
                   ),
                   padding: const EdgeInsets.all(10),
-                  margin: const EdgeInsets.symmetric(
-                      vertical: 2.5, horizontal: 5),
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 2.5, horizontal: 5),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
@@ -116,8 +118,7 @@ class _DuaPageState extends State<DuaPage> {
                               Text(
                                 ' ${duas[i]['sura_name_arabic'] + ' - ' + duas[i]['verse']}',
                                 style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
+                                    fontSize: 16, fontWeight: FontWeight.bold),
                               ),
                             ],
                           ),
@@ -156,8 +157,7 @@ class _DuaPageState extends State<DuaPage> {
                         children: [
                           if (malayalam)
                             Text(duas[i]['malayalam'],
-                                style:
-                                    TextStyle(fontSize: malayalamFontSize)),
+                                style: TextStyle(fontSize: malayalamFontSize)),
                           if (malayalam)
                             const SizedBox(
                               height: 10,

@@ -193,6 +193,15 @@ class _SettingsPageState extends State<SettingsPage> {
                     ElevatedButton.icon(
                         icon: const Icon(Icons.save),
                         onPressed: () {
+                          setState(() {
+                            arabicFontSize;
+                            malayalamFontSize;
+                            englishFontSize;
+                            transliterationFontSize;
+                            transliteration;
+                            english;
+                            malayalam;
+                          });
                           saveSettings();
                           Navigator.pop(context);
                         },
