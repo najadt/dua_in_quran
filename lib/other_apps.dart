@@ -3,7 +3,6 @@
 import 'package:dua_in_quran/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class OtherApps extends StatelessWidget {
   const OtherApps({Key? key}) : super(key: key);
@@ -25,7 +24,7 @@ class OtherApps extends StatelessWidget {
               children: [
                 appTile(
                     launchUrl: AvoiceURL,
-                    icon: 'assets/ahlussunna_voice_logo.jpg',
+                    icon: 'assets/ahlussunna_voice_logo.jpeg',
                     discription:
                         '''ഡൗൺലോഡ് ചെയ്യാതെ തന്നെ അഹ്‌ലുസ്സുന്ന ദാഇമാരുടെ, വ്യത്യസ്ത വിഷയങ്ങളിലുള്ള പഠനാർഹമായ ക്ലാസുകളും ദർസുകളും കേൾക്കാൻ ഈ ആപ്പ് നിങ്ങളെ സഹായിക്കുന്നു.''',
                     appName: 'Ahlussunna Voice'),
@@ -43,11 +42,11 @@ class OtherApps extends StatelessWidget {
                   height: 15,
                 ),
                 appTile(
-                  launchUrl: DuaFromQuranURL,
-                  icon: 'assets/duaFromQuran.png',
-                  appName: 'Dua From Quran',
+                  launchUrl: Quran,
+                  icon: 'assets/quran.png',
+                  appName: 'Quran With Meaning',
                   discription:
-                      '''വിശുദ്ധ ഖുർആനിൽ നിന്നുള്ള ആധികാരിക ദുആകളുടെ സമാഹാരമാണ് ദുആ ഫ്രം ഖുർആൻ ആപ്പ്. ഇംഗ്ലീഷ്, മലയാളം ഭാഷകളിലെ വിവർത്തനങ്ങൾ ഉൾപ്പെടെ.''',
+                      '''മലയാള പരിഭാഷ: ചെറിയമുണ്ടം അബ്ദുൽ ഹമീദ് & കുഞ്ഞി മുഹമ്മദ് പറപ്പൂർ''',
                 ),
               ],
             ),
@@ -109,21 +108,20 @@ class OtherApps extends StatelessWidget {
   }
 
   void AvoiceURL() async {
-    if (!await launchUrl(Avoiceurl, mode: LaunchMode.externalApplication)) {
-      throw 'Could not launch $Avoiceurl';
+    if (!await launchUrl(aVoiceUrl, mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $aVoiceUrl';
     }
   }
 
   void AwraadURL() async {
-    if (!await launchUrl(Awraadurl, mode: LaunchMode.externalApplication)) {
-      throw 'Could not launch $Awraadurl';
+    if (!await launchUrl(awraadUrl, mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $awraadUrl';
     }
   }
 
-  void DuaFromQuranURL() async {
-    if (!await launchUrl(duaFromQuranurl,
-        mode: LaunchMode.externalApplication)) {
-      throw 'Could not launch $Awraadurl';
+  void Quran() async {
+    if (!await launchUrl(quranAppUrl, mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $quranAppUrl';
     }
   }
 }

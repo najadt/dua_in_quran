@@ -46,9 +46,9 @@ class _SplashScreenState extends State<SplashScreen> {
             fit: BoxFit.fitWidth,
           ),
         ),
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Expanded(flex: 2, child: SizedBox()),
             Text(
               'وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ',

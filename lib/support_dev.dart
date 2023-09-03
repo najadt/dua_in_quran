@@ -24,7 +24,7 @@ class DonationPage extends StatelessWidget {
     );
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 56, 115, 59),
+        ///backgroundColor: const Color.fromARGB(255, 56, 115, 59),
         title: const Text('Support Us'),
       ),
       body: Padding(
@@ -50,9 +50,9 @@ class DonationPage extends StatelessWidget {
                   const Text('UPI Payment (only in India)',
                       style: TextStyle(fontWeight: FontWeight.bold)),
                   const Divider(),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text('UPI ID: 9633645334@sbi'),
                       SizedBox(
                         height: 20,
@@ -64,9 +64,9 @@ class DonationPage extends StatelessWidget {
                   const SizedBox(
                     height: 15,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text('GooglePay/PhonePay: 9633645334'),
                       SizedBox(
                         height: 20,
@@ -93,7 +93,17 @@ class DonationPage extends StatelessWidget {
                   const Text('Paypal (rest of the world)',
                       style: TextStyle(fontWeight: FontWeight.bold)),
                   const Divider(),
-                  const Text('PayPal ID: onajad@gmail.com'),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('PayPal ID: onajad@gmail.com'),
+                      SizedBox(
+                        height: 20,
+                        child: CopyToClipBoardElevatedButton(
+                            copytext: 'onajad@gmail.com'),
+                      )
+                    ],
+                  ),
                   const Expanded(child: SizedBox()),
                   GestureDetector(
                     onTap: payPalLauncher,

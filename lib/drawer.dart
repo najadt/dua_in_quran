@@ -28,15 +28,16 @@ class MyDrawer extends StatelessWidget {
             ),
             child: Column(
               children: [
-                // Image.asset(
-                //   'assets/quran.png',
-                //   height: 80,
-                // ),
-                const Text(
-                  'Dua From Quran',
-                  style: TextStyle(fontSize: 20),
+                Image.asset(
+                  'assets/icon/icon.png',
+                  height: 80,
                 ),
-                const Text('ഖുർആനിലുള്ള പ്രാർത്ഥനകൾ')
+                // const Text(
+                //   'Dua From Quran',
+                //   style: TextStyle(fontSize: 20),
+                // ),
+                const Text('ഖുർആനിലുള്ള പ്രാർത്ഥനകൾ',
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold))
               ],
             ),
           ),
@@ -49,21 +50,21 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () async {
               Navigator.pop(context);
-               Navigator.push(
+              Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const SettingsPage()));               
+                      builder: (context) => const SettingsPage()));
             },
           ),
-          // ListTile(
-          //   leading: const Icon(
-          //     Icons.bookmark,
-          //   ),
-          //   title: const Text(
-          //     'Bookmarks',
-          //   ),
-          //   onTap: () {},
-          // ),
+          ListTile(
+            leading: const Icon(
+              Icons.book,
+              //color: themeColor,
+            ),
+            title: const Text('Buy Books'),
+            subtitle: const Text("ahlussunnabooks.org"),
+            onTap: ahlussunnaBooks,
+          ),
           ListTile(
             leading: const Icon(
               Icons.apps,
@@ -85,8 +86,20 @@ class MyDrawer extends StatelessWidget {
               'Share',
             ),
             onTap: () {
-              Share.share('''*Quran with malayalam meaning*\n
-Download from https://play.google.com/store/apps/details?id=org.ahlussunnabooks.quran''');
+              Share.share(
+                  '''📲 *ഖുർആനിലെ പ്രാർത്ഥനകൾ ഇനി നിങ്ങളുടെ മൊബൈൽ ഫോണിലും* 📲
+              
+വിശുദ്ധ ഖുർആനിലെ ശ്രേഷ്ഠമായ പ്രാർത്ഥനകളുടെ മൊബൈൽ ആപ്ലിക്കേഷൻ ഇതാ നിങ്ങളുടെ വിരൽത്തുമ്പിൽ...
+
+കടുത്ത ദുരന്തങ്ങളുടെയും പരീക്ഷണങ്ങളുടെയും കനൽപഥങ്ങളിൽനിന്ന് ആശ്വാസത്തിന്റെയും സന്തോഷത്തിന്റെയും തീരമണയാൻ പ്രചോദനമാകുന്ന, ഖുർആൻ ഉദ്ധരിച്ച വിവിധ പ്രാർത്ഥനകളുടെ ക്രോഡീകരണം.
+
+🧭  മലയാളം ഇംഗ്ലീഷ് അർത്ഥ സഹിതം
+
+🎙️ പഠന സൗകര്യത്തിന് പ്രാർത്ഥനകളുടെ ഓഡിയോ
+
+💡 ഇൻസ്റ്റാൾ ചെയ്യാൻ താഴെ കൊടുത്ത ലിങ്കിൽ ക്ലിക്ക് ചെയ്യുക:
+
+Download: https://play.google.com/store/apps/details?id=dev.najad.duasinquran''');
               Navigator.pop(context);
             },
           ),
@@ -98,9 +111,9 @@ Download from https://play.google.com/store/apps/details?id=org.ahlussunnabooks.
               'Rate',
             ),
             onTap: () async {
-              if (!await launchUrl(quranAppurl,
+              if (!await launchUrl(duaFromQuranurl,
                   mode: LaunchMode.externalApplication)) {
-                throw 'Could not launch $quranAppurl';
+                throw 'Could not launch $duaFromQuranurl';
               }
             },
           ),
@@ -135,5 +148,12 @@ Download from https://play.google.com/store/apps/details?id=org.ahlussunnabooks.
         ],
       ),
     );
+  }
+
+  void ahlussunnaBooks() async {
+    if (!await launchUrl(ahlussunnaBooksUrl,
+        mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $ahlussunnaBooksUrl';
+    }
   }
 }
